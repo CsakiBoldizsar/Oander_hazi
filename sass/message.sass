@@ -1,0 +1,98 @@
+section#message
+	margin-top: -70px
+	padding-top: 95px
+	background:
+		image: url('../assets/imgs/message-bg.png')
+		size: cover
+		position: center
+	position: relative
+	padding-bottom: 125px
+	.extra-padding
+		padding: 0 15px
+		position: relative
+		z-index: 2
+		.title
+			font-size: 50px
+			line-height: 62px
+			font-weight: bold
+			margin-bottom: 30px
+			font-weight: bold
+			span
+				color: $oander-gold
+		.description
+			color: $regular-text-color
+			font-size: 16px
+			line-height: 28px
+			font-weight: normal
+			margin-bottom: 40px
+			max-width: 440px
+		.img-holder
+			position: relative
+			z-index: 2
+			img
+				max-width: 100%
+			.layer
+				background-color: rgba(255,255,255,0.2)
+				position: absolute
+				height: 90%
+				width: 90%
+				top: 50%
+				left: 45%	
+				transform: translate(-50%,-50%)
+				z-index: -1
+	.left-content
+		position: absolute
+		width: 44.2%
+		height: 100%
+		right: 0
+		top: 0
+		background-color: #242123 
+		overflow: hidden
+		font-size: 220px
+		color: #3A3A3A
+		line-height: 180px
+		font-weight: 900
+		div.text
+			display: flex!important
+			align-items: center
+			height: 100%
+			padding-left: 50px
+	.on-mobile
+		position: absolute
+		right: 0
+		top: 50%
+		transform: translateY(-50%)
+		.mobile-image
+			display: none
+
+	@media(max-width: 1200px)
+		.extra-padding
+			.img-holder
+				img
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+				.layer
+					height: 80%
+	@media(max-width: 991px)
+		background: 
+			image: linear-gradient(#F7F7F7,#EBEBEB)
+		margin-top: 0
+		padding: 60px 0
+		.extra-padding
+			.description
+				display: none
+			.title
+				font-size: 28px
+				line-height: 38px
+			.img-holder
+				position: relative
+				z-index: 3
+				background-color: transparent
+				.layer
+					display: none
+		.on-mobile
+			.mobile-image
+				display: block 	
+		.left-content
+			width: 50px

@@ -1,0 +1,45 @@
+section#properties
+	background-color: $properties-bg-color
+	padding: 38px 0 37px 0
+	.property
+		height: 100%
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		flex-direction: column
+		position: relative
+		&:after
+			position: absolute
+			display: block
+			content: ''
+			width: 1px
+			height: 102px
+			background-color: #c4a37b
+			right: 0
+			top: 50%
+			transform: translateY(-50%)
+			opacity: 0.2
+		&.no-border
+			&:after
+				display: none
+		.icon
+		.icon-text
+			margin-top: 20px
+			font-size: 18px
+			line-height: 22px
+			font-weight: 600
+			color: #ffffff
+	@media(max-width: 991px)
+		padding: 0
+		.property
+			padding-bottom: 37px
+			padding-top: 38px
+			&:after
+				display: none
+			.icon-text
+				font-size: 14px
+				line-height: 18px
+		.custom-border-bottom
+			border-bottom: 1px solid rgba(196,163,123,0.2) 
+		.custom-border-right
+			border-right: 1px solid rgba(196,163,123,0.2) 

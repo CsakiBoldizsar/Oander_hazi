@@ -1,0 +1,49 @@
+section#more-items
+	margin: 50px 0
+	.item
+		.header-image
+			img
+				width: 100%
+		.title-and-button
+			padding: 20px 15px 30px 20px
+			border: 1px solid rgba(41,41,41,0.1)
+			.title
+				font-weight: bold
+				font-size: 18px
+				line-height: 28px
+				color: $regular-text-color
+				margin-bottom: 30px
+			.learn-more-button
+				a
+					color: $oander-gold
+					font-size: 16px
+					font-weight: 500
+					position: relative
+					&:after
+						content: ''
+						position: absolute
+						width: 13px
+						height: 12px
+						background:
+							image: url('../assets/imgs/arrow.svg')
+							size: cover
+							position: center
+						top: 50%
+						transform: translateY(-50%)
+						right: -23px
+					text-decoration: none
+	@media(max-width: 1200px)
+		.item
+			.title-and-button
+				.title
+					font-size: 14px
+	@media(max-width: 991px)
+		margin: 30px 0
+		.item
+			margin-bottom: 20px
+			.title-and-button
+				padding: 20px 21px
+				.title
+					line-height: 24px
+					margin-bottom: 11px
+

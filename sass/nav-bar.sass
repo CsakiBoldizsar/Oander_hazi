@@ -1,0 +1,46 @@
+
+section#nav-bar
+	max-width: 1371px
+	margin: auto
+	position: relative
+	z-index: 2
+	nav
+		width: 100%
+		background-color: #ffffff
+		padding: 12px 30px
+		a.navbar-brand
+			img
+				width: 120px
+				height: 36px
+		div
+			ul
+				li
+					a
+						font-size: 18px
+						line-height: 22px
+						color: $nav-color
+						font-weight: bold
+						transition: all .5s
+						&:hover
+							color: $oander-gold
+	@media(max-width: 991px)
+		nav
+			padding: 15px 20px
+			a.navbar-brand
+				img
+					width: 87px
+					height: 26px
+			button.navbar-toggler
+				outline: none
+				border: none
+				color: $nav-toggler-color
+				padding-left: 1.5rem
+				padding-right: 0
+				span
+					width: 27px
+					height: 17px
+			div
+				ul
+					li
+						a
+							text-align: center
